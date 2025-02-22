@@ -1,9 +1,14 @@
 +++
 title = "Hypermedia APIs vs. Data APIs"
+description = """\
+  In this essay, Carson Gross explores the fundamental differences between hypermedia APIs and data APIs, He explains \
+  how hypermedia APIs, which return HTML over HTTP, can embrace frequent changes due to their self-describing nature, \
+  while data APIs require more stability and versioning to avoid breaking client code. Carson argues that these \
+  distinct characteristics should inform different design approaches for each type of API."""
 date = 2021-07-17
 updated = 2022-04-07
+authors = ["Carson Gross"]
 [taxonomies]
-author = ["Carson Gross"]
 tag = ["posts"]
 +++
 
@@ -24,7 +29,7 @@ Hypermedia APIs:
 Data APIs, on the other hand:
  
 * Will not benefit dramatically from REST-fulness, beyond perhaps [Level 2 of the Richardson Maturity Model](https://en.wikipedia.org/wiki/Richardson_Maturity_Model)
-* Should strive for both regularity and expressivity due to the arbitrary data needs of consumers
+* Should strive for both regularity and expressiveness due to the arbitrary data needs of consumers
 * Should be versioned and should be very stable within a particular version of the API
 * Should be consumed by code, processed and then potentially presented to a human
  
