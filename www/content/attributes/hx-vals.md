@@ -43,8 +43,7 @@ The `hx-vals` attribute works with all HTTP methods, including `hx-post`, `hx-pu
   </button>
 ```
 
-When used with non-GET requests (POST, PUT, PATCH, DELETE), the values from `hx-vals` are included in the request body.
-When used with GET requests, they are appended as query parameters.
+When used with GET requests, the values are appended as query parameters.
 
 ## JSON Syntax Requirements
 
