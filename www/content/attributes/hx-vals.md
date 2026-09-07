@@ -48,7 +48,7 @@ When used with GET requests, they are appended as query parameters.
 
 ## JSON Syntax Requirements
 
-The `hx-vals` attribute requires **valid JSON syntax**. A common mistake is using single quotes inside the JSON, which will cause the values to be silently ignored:
+The `hx-vals` attribute requires **valid JSON syntax**. A common mistake is using single quotes inside the JSON, which will cause the values to be ignored:
 
 ```html
   <!-- WRONG: Single quotes inside JSON are invalid -->
@@ -61,7 +61,7 @@ The `hx-vals` attribute requires **valid JSON syntax**. A common mistake is usin
   <div hx-post="/example" hx-vals="{&quot;myVal&quot;: &quot;value&quot;}">This also works</div>
 ```
 
-If your `hx-vals` JSON is malformed, htmx will silently ignore it without any error message, which can make debugging difficult.
+If your `hx-vals` JSON is malformed, htmx will log an error to the console and ignore the value.
 
 ## Security Considerations
 
